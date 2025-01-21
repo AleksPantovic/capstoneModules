@@ -1,0 +1,25 @@
+<assembly
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.1.0"
+        xsi:schemaLocation="https://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.1.0 https://maven.apache.org/xsd/assembly-2.1.0.xsd">
+    <id>fsm</id>
+    <baseDirectory>/</baseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <files>
+        <file>
+            <source>target/${project.artifactId}-${project.version}-jar-with-dependencies.jar</source>
+            <outputDirectory>/lib/</outputDirectory>
+        </file>
+    </files>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}/src/main/resources</directory>
+            <includes>
+                <include>*</include>
+            </includes>
+            <outputDirectory>/META-INF/</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>

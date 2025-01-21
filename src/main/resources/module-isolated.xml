@@ -1,0 +1,15 @@
+<module>
+    <name>TranslatorModule</name>
+    <displayName>Transator Module</displayName>
+    <version>1.0.0</version>
+    <vendor>asioso GmbH</vendor>
+    <components>
+        <public>
+            <name>SimpleExecutable</name>
+            <class>com.asioso.firstspirit.translatormodule.executable.SimpleExecutable</class>
+        </public>
+    </components>
+    <resources>
+        <resource name="com.asioso.firstspirit.translatormodule" version="1.0.0" mode="isolated">lib/TranslatorModule-1.0.0-jar-with-dependencies.jar</resource>
+    </resources>
+</module>
